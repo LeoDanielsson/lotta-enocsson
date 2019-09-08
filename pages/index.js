@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import { grey, gold, red, lightRed } from '../colors';
+import verkstad from '../content/verkstad.md';
 
 export default () => (
   <Layout>
@@ -26,16 +27,8 @@ export default () => (
       <div className='newsfeed'>
         <h2>Aktuellt</h2>
         <article className='article'>
-          <h3>Aktiv på Skulptörens verkstad</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis
-            nibh et est bibendum tempor. Mauris ut aliquam augue. Mauris mollis
-            lorem quam. Nunc felis nisl, fermentum a diam quis, accumsan
-            sagittis purus. Donec nec placerat leo. Donec id mi est. Vivamus
-            orci lacus, consequat eu convallis et, fringilla vitae dui.
-            Curabitur ut velit non nibh tempor facilisis. Fusce accumsan aliquam
-            lectus, at pharetra erat maximus ut.
-          </p>
+          <h3>{verkstad.title}</h3>
+          <div dangerouslySetInnerHTML={{ __html: verkstad.html }} />
         </article>
         <article className='article'>
           <h3>Utställning på ett slott</h3>
