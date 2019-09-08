@@ -1,0 +1,30 @@
+{
+  "name": "lotta-enocsson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LugoMoll/lotta-enocsson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LugoMoll/lotta-enocsson/issues"
+  },
+  "homepage": "https://github.com/LugoMoll/lotta-enocsson#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "typography": "^0.16.19"
+  },
+  "devDependencies": {}
+}
