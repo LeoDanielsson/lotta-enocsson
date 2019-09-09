@@ -48,14 +48,17 @@ export default () => (
       <img src='/static/kontakt.jpg' />
     </address>
     <style jsx>{`
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
       address {
         max-width: 1200px;
         font-style: normal;
         text-align: left;
+      }
+
+      @media (min-width: 900px) {
+        .grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
       }
     `}</style>
   </Layout>
