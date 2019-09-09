@@ -4,12 +4,10 @@ backend:
 media_folder: static/img
 collections:
   - name: "articles"
-    label: "Artiklar"
-    files:
-      - label: "Verkstad"
-        name: "verkstad"
-        file: "content/verkstad.md"
-        fields:
-          - { label: "Titel", name: "title", widget: "string" }
-          - { label: "Datum", name: "date", widget: "datetime" }
-          - { label: "Brödtext", name: "body", widget: "markdown" }
+    label: "Aktuellt"
+    create: true
+    folder: "content/aktuellt"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime" }
+      - { label: "Brödtext", name: "body", widget: "markdown" }
