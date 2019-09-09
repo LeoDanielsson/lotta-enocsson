@@ -18,7 +18,6 @@ export default () => (
         padding: 32px;
       }
       color: white;
-      background-color: ${grey};
       address {
         max-width: 1200px;
         margin: 0 auto;

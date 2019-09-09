@@ -4,16 +4,14 @@ import { red, grey, eggshell } from '../colors';
 
 const nav = [
   { text: 'Hem', href: '/' },
-  { text: 'Utställningar', href: '/utstallningar' },
+  { text: 'CV', href: '/cv' },
   { text: 'Skulptur', href: '/skulptur' },
   { text: 'Måleri', href: '/maleri' },
-  { text: 'Offentliga verk', href: '/offentliga-verk' },
   { text: 'Kontakt', href: '/kontakt' }
 ];
 
 export default () => {
   const { pathname } = useRouter();
-  console.log('pathname :', pathname);
   return (
     <header>
       <nav>
@@ -30,13 +28,21 @@ export default () => {
         </ul>
       </nav>
       <style jsx>{`
-        background-color: ${grey};
+        max-width: 1200px;
+        margin: 0 auto;
         ul {
           list-style: none;
           display: flex;
-          justify-content: center;
           margin: 0;
+          overflow: scroll;
+          -webkit-overflow-scrolling: touch;
+          -ms-overflow-style: -ms-autohiding-scrollbar;
         }
+
+        ul::-webkit-scrollbar {
+          display: none;
+        }
+
         li {
           margin: 0;
         }
@@ -48,8 +54,7 @@ export default () => {
         }
 
         .active {
-          background-color: ${eggshell};
-          color: black;
+          border-bottom: 2px solid ${red};
         }
       `}</style>
     </header>
