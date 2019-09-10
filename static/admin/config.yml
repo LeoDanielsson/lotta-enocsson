@@ -3,24 +3,31 @@ backend:
   branch: master
 media_folder: static/img
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: pages
+    label: Pages
     files:
-      - label: "Startsida"
-        name: "startpage"
-        file: "content/pages/startpage.md"
+      - label: Startsida
+        name: startpage
+        file: content/pages/startpage.md
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Text", name: "body", widget: "markdown" }
-          - label: "Images"
-            name: "images"
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Text, name: body, widget: markdown }
+          - label: Images
+            name: images
             widget: list
             field: { label: Image, name: image, widget: image }
-      - label: "CV"
-        name: "cv"
-        file: "content/pages/cv.md"
+      - label: CV
+        name: cv
+        file: content/pages/cv.md
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Text", name: "body", widget: "markdown" }
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Text, name: body, widget: markdown }
+      - label: Kontakt
+        name: contact
+        file: content/pages/contact.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Text, name: body, widget: markdown }
+          - { label: Image, name: image, widget: image }
