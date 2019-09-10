@@ -11,4 +11,5 @@ collections:
         file: "content/pages/startpage.md"
         fields:
           - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Undertitel", name: "subtitle", widget: "string" }
           - { label: "Introtext", name: "intro", widget: "markdown" }
