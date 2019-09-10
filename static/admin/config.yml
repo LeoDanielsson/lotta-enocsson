@@ -17,3 +17,9 @@ collections:
             name: "images"
             widget: list
             field: { label: Image, name: image, widget: image }
+      - label: "CV"
+        name: "cv"
+        file: "content/pages/cv.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "body", widget: "markdown" }
