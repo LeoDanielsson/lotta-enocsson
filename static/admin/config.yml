@@ -22,4 +22,5 @@ collections:
         file: "content/pages/cv.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Text", name: "body", widget: "markdown" }
