@@ -8,7 +8,6 @@ export default () => {
     attributes: { title, subtitle, images },
     html
   } = content;
-  console.log('images :', images);
   return (
     <Layout>
       <h1>{title}</h1>
@@ -19,9 +18,9 @@ export default () => {
       />
       <div className='body'>
         <div className='gallery'>
-          <img src='/static/paintings/IMG_2094.JPG' />
-          <img src='/static/paintings/IMG_2636.jpg' />
-          <img src='/static/paintings/IMG_2338.jpg' />
+          {images.map(src => (
+            <img key={src} src={src} />
+          ))}
         </div>
       </div>
 
