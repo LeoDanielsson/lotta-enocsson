@@ -3,11 +3,12 @@ backend:
   branch: master
 media_folder: static/img
 collections:
-  - name: "articles"
-    label: "Aktuellt"
-    create: true
-    folder: "content/aktuellt"
-    fields:
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Datum", name: "date", widget: "datetime" }
-      - { label: "Brödtext", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Sidor"
+    files:
+      - label: "Startsida"
+        name: "startpage"
+        file: "content/pages/startpage.md"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Introtext", name: "intro", widget: "markdown" }
