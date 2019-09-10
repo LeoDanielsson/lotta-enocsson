@@ -4,12 +4,16 @@ backend:
 media_folder: static/img
 collections:
   - name: "pages"
-    label: "Sidor"
+    label: "Pages"
     files:
       - label: "Startsida"
         name: "startpage"
         file: "content/pages/startpage.md"
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-          - { label: "Undertitel", name: "subtitle", widget: "string" }
-          - { label: "Introtext", name: "intro", widget: "markdown" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Text", name: "body", widget: "markdown" }
+          - label: "Images"
+            name: "images"
+            widget: list
+            field: { label: Image, name: image, widget: image }
