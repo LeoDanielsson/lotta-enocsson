@@ -1,6 +1,5 @@
 import Layout from '../components/Layout';
-import News from '../components/News';
-import { grey, gold, red, lightRed } from '../colors';
+import { gold } from '../colors';
 import content from '../content/pages/startpage.md';
 
 export default () => {
