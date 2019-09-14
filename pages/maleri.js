@@ -1,37 +1,22 @@
 import Layout from '../components/Layout';
 import { grey } from '../colors';
+import content from '../content/pages/paintings.md';
 
 export default () => {
-  const paintings = [
-    'static/paintings/IMG_0032.JPG',
-    'static/paintings/IMG_0757.JPG',
-    'static/paintings/IMG_2002.JPG',
-    'static/paintings/IMG_2094.JPG',
-    'static/paintings/IMG_2096.JPG',
-    'static/paintings/IMG_2338.JPG',
-    'static/paintings/IMG_2406.JPG',
-    'static/paintings/IMG_2444.JPG',
-    'static/paintings/IMG_2490.JPG',
-    'static/paintings/IMG_2621.JPG',
-    'static/paintings/IMG_2634.JPG',
-    'static/paintings/IMG_2636.JPG',
-    'static/paintings/IMG_5878.JPG',
-    'static/paintings/IMG_7207.JPG',
-    'static/paintings/IMG_7208.JPG',
-    'static/paintings/IMG_7213.JPG',
-    'static/paintings/IMG_7218.JPG',
-    'static/paintings/IMG_7220.JPG'
-  ];
+  const { title, paintings } = content.attributes;
+
   return (
     <Layout>
-      <h1>Måleri</h1>
+      <h1>{title}</h1>
       <div className='gallery'>
-        {paintings.map(url => (
+        {paintings.map(painting => (
           <div className='item'>
-            <a href={url} target='_blank'>
-              <img src={url} />
+            <a href={painting.image} target='_blank'>
+              <img src={painting.image} />
             </a>
-            <small>Gryning, olja, 45x45cm</small>
+            <small>
+              {painting.name} - {painting.description}
+            </small>
           </div>
         ))}
       </div>

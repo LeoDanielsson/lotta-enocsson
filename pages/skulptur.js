@@ -1,27 +1,15 @@
 import Layout from '../components/Layout';
+import content from '../content/pages/sculptures.md';
 
 export default () => {
-  const paintings = [
-    'static/sculptures/_P1N2614.JPG',
-    'static/sculptures/IMG_0704.JPG',
-    'static/sculptures/IMG_0707.JPG',
-    'static/sculptures/IMG_0733.JPG',
-    'static/sculptures/IMG_0748.JPG',
-    'static/sculptures/IMG_1003.JPG',
-    'static/sculptures/IMG_2133.JPG',
-    'static/sculptures/IMG_0906.JPG',
-    'static/sculptures/IMG_0916.JPG',
-    'static/sculptures/IMG_0917.JPG',
-    'static/sculptures/IMG_0918.JPG',
-    'static/sculptures/IMG_2258.JPG'
-  ];
+  const { title, sculptures } = content.attributes;
   return (
     <Layout>
-      <h1>Skulptur</h1>
+      <h1>{title}</h1>
       <div className='gallery'>
-        {paintings.map(url => (
+        {sculptures.map(sculpture => (
           <div className='item'>
-            <img src={url} />
+            <img src={sculpture.image} />
           </div>
         ))}
       </div>
