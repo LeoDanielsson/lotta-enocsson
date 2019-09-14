@@ -14,11 +14,11 @@ const typography = new Typography({
   bodyFontFamily: ['Open Sans', 'sans-serif']
 });
 
-export default ({ children }) => {
+export default ({ title, children }) => {
   return (
     <div>
       <Head>
-        <title>Lotta Enocsson - Skulptör</title>
+        <title>{`Lotta Enocsson - ${title}`}</title>
         <meta lang='sv' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta charSet='utf-8' />
@@ -27,23 +27,33 @@ export default ({ children }) => {
           rel='stylesheet'
         />
       </Head>
-      <Header />
+      <Header className='header' />
       <main>
         <div className='container'>{children}</div>
       </main>
       <Footer />
       <style jsx global>{`
         ${typography.toString()}
+
+        .hero {
+          height: 400px;
+        }
         h1 {
           color: ${red};
+          margin: 48px 0;
         }
         body {
-          background: #1f1f1f;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0) 0vh,
+              rgba(0, 0, 0, 1) 30vh
+            ),
+            url('/static/img/IMG_2096.jpg');
           color: #fafafa;
-          padding: 16px;
+          background-position: top;
+          background-size: 100vw;
+          background-repeat: no-repeat;
         }
         main {
-          background: #1f1f1f;
           padding-top: 32px;
         }
 
@@ -53,12 +63,23 @@ export default ({ children }) => {
 
         .container {
           max-width: 1200px;
+          padding: 0 8px;
           margin: 0 auto;
-          min-height: 100vh;
         }
         p,
         li {
           max-width: 50em;
+        }
+
+        @media (min-width: 900px) {
+          body {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0) 0vh,
+                rgba(0, 0, 0, 0.9) 50vh,
+                rgba(0, 0, 0, 0.99) 100vh
+              ),
+              url('/static/img/IMG_2096.jpg');
+          }
         }
       `}</style>
     </div>

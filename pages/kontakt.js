@@ -1,15 +1,15 @@
 import Layout from '../components/Layout';
 
 export default () => (
-  <Layout>
+  <Layout title='Kontakt'>
     <h1>Kontakt</h1>
-    <address className='grid'>
+    <div className='grid'>
       <address>
-        <p>
+        <div>
           <div>Lotta Enocsson</div>
           <div>Ateljé Vinterviken hus 36</div>
           <div>117 65 Stockholm</div>
-        </p>
+        </div>
         <p>
           <span>Telefon: </span>
           <a href='tel:0736249285'>073-624 92 85</a>
@@ -46,7 +46,7 @@ export default () => (
         </p>
       </address>
       <img src='/static/kontakt.jpg' />
-    </address>
+    </div>
     <style jsx>{`
       address {
         max-width: 1200px;

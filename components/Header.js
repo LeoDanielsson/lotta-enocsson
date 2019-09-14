@@ -37,6 +37,7 @@ export default () => {
           overflow: scroll;
           -webkit-overflow-scrolling: touch;
           -ms-overflow-style: -ms-autohiding-scrollbar;
+          justify-content: space-around;
         }
 
         ul::-webkit-scrollbar {
@@ -50,11 +51,20 @@ export default () => {
           display: block;
           text-decoration: none;
           color: white;
-          padding: 16px;
+          padding: 16px 8px;
         }
 
         .active {
           border-bottom: 2px solid ${red};
+        }
+
+        @media (min-width: 900px) {
+          ul {
+            justify-content: flex-start;
+          }
+          a {
+            padding: 16px;
+          }
         }
       `}</style>
     </header>

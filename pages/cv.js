@@ -7,7 +7,7 @@ export default () => {
     html
   } = content;
   return (
-    <Layout>
+    <Layout title={title}>
       <h1>{title}</h1>
       <p>{subtitle}</p>
       <div dangerouslySetInnerHTML={{ __html: html }} />

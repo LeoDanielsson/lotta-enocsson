@@ -8,7 +8,7 @@ export default () => {
     html
   } = content;
   return (
-    <Layout>
+    <Layout title='Lotta Enocsson'>
       <h1>{title}</h1>
       <div className='teaser'>{subtitle}</div>
       <div
@@ -27,10 +27,6 @@ export default () => {
         .teaser {
           font-size: 24px;
           margin-bottom: 32px;
-        }
-
-        .presentation {
-          margin-bottom: 64px;
         }
 
         .article {
