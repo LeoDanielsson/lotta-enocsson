@@ -1,8 +1,12 @@
+import { grey } from '../colors';
+
 export default () => (
   <footer>
     <address>
       <div>Lotta Enocsson</div>
-      <div>
+      <div>Ateljé Vinterviken hus 36</div>
+      <div>117 65 Stockholm</div>
+      <div className='phone'>
         <span>Telefon: </span>
         <a href='tel:0701234567'>070-123 45 67</a>
       </div>
@@ -13,16 +17,20 @@ export default () => (
     </address>
     <style jsx>{`
       footer {
-        padding: 32px;
+        padding: 32px 0;
+        color: ${grey};
       }
-      color: white;
       address {
         max-width: 1200px;
+        padding: 8px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         font-style: normal;
+      }
+      .phone {
+        margin-top: 8px;
       }
     `}</style>
   </footer>
