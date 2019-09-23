@@ -5,8 +5,8 @@ import { red } from '../colors';
 const nav = [
   { text: 'Hem', href: '/' },
   { text: 'CV', href: '/cv' },
-  { text: 'Målningar', href: '/maleri' },
-  { text: 'Skulpturer', href: '/skulptur' },
+  { text: 'Målningar', href: '/malningar' },
+  { text: 'Skulpturer', href: '/skulpturers' },
   { text: 'Kontakt', href: '/kontakt' }
 ];
 
