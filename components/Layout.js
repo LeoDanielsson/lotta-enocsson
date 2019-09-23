@@ -51,7 +51,6 @@ export default ({ title, metaTitle, children }) => {
           color: ${white};
         }
         main {
-          padding-top: 32px;
         }
 
         a {
