@@ -1,15 +1,5 @@
 import Head from 'next/head';
 
-const gaScript = `
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-
-gtag('config', 'UA-92249813-2');
-`;
-
 export default ({ title }) => (
   <Head>
     <title>{title}</title>
@@ -102,6 +92,5 @@ export default ({ title }) => (
       async
       src='https://www.googletagmanager.com/gtag/js?id=UA-92249813-2'
     ></script>
-    <script dangerouslySetInnerHTML={{ __html: gaScript }} />
   </Head>
 );
