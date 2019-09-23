@@ -5,7 +5,7 @@ export default ({ items }) => (
   <div className='gallery'>
     {items.map(item => (
       <div key={item.name} className='item'>
-        <a href={item.image} target='_blank'>
+        <a href={item.image} target='_blank' aria-label='Ladda ner bild'>
           <Picture
             src={item.image}
             alt={`${item.name} - ${item.description}`}
