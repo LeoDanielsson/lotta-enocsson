@@ -6,7 +6,7 @@ const nav = [
   { text: 'Hem', href: '/' },
   { text: 'CV', href: '/cv' },
   { text: 'Målningar', href: '/malningar' },
-  { text: 'Skulpturer', href: '/skulpturers' },
+  { text: 'Skulpturer', href: '/skulpturer' },
   { text: 'Kontakt', href: '/kontakt' }
 ];
 
