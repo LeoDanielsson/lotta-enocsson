@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Head from './Head';
 import Header from './Header';
 import { black, white, red } from '../colors';
 
@@ -15,17 +15,7 @@ const typography = new Typography({
   bodyFontFamily: ['Open Sans', 'sans-serif']
 });
 
-const gaScript = `
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-
-gtag('config', 'UA-92249813-2');
-`;
-
-export default ({ title, children }) => {
+export default ({ title, metaTitle, children }) => {
   const { pathname } = useRouter();
 
   useEffect(() => {
@@ -37,23 +27,7 @@ export default ({ title, children }) => {
 
   return (
     <div>
-      <Head>
-        <title>{`Lotta Enocsson - ${title}`}</title>
-        <meta name='Description' content='Målare och skulptör i Stockholm.' />
-        <meta lang='sv' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta charSet='utf-8' />
-        <link
-          href='https://fonts.googleapis.com/css?family=Hepta+Slab|Merriweather|Open+Sans&display=swap'
-          rel='stylesheet'
-        />
-        <script src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
-        <script
-          async
-          src='https://www.googletagmanager.com/gtag/js?id=UA-92249813-2'
-        ></script>
-        <script dangerouslySetInnerHTML={{ __html: gaScript }} />
-      </Head>
+      <Head title={metaTitle || `Lotta Enocsson - ${title}`} />
       <Header className='header' />
       <main>
         <div className='container'>{children}</div>

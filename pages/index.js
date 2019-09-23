@@ -7,7 +7,10 @@ export default () => {
     html
   } = content;
   return (
-    <Layout title='Lotta Enocsson'>
+    <Layout
+      title='Lotta Enocsson'
+      metaTitle='Lotta Enocsson - Målare och skulptör i Stockholm'
+    >
       <h1>{title}</h1>
       <div className='teaser'>{subtitle}</div>
       <div
