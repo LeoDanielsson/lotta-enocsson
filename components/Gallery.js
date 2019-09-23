@@ -6,7 +6,10 @@ export default ({ items }) => (
     {items.map(item => (
       <div key={item.name} className='item'>
         <a href={item.image} target='_blank'>
-          <Picture src={item.image} />
+          <Picture
+            src={item.image}
+            alt={`${item.name} - ${item.description}`}
+          />
         </a>
         {item.description && <small>{item.description}</small>}
       </div>
