@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import content from '../content/pages/startpage.md';
+import Link from 'next/link';
 
 export default () => {
   const {
@@ -41,6 +42,9 @@ export default () => {
             </picture>
           ))}
         </div>
+        <Link href='/malningar'>
+          <a className='seeAll'>Se fler målningar</a>
+        </Link>
       </div>
 
       <style jsx>{`
