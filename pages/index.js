@@ -17,7 +17,7 @@ export default () => {
       <div className='body'>
         <div className='gallery'>
           {images.map(src => (
-            <picture>
+            <picture key={src}>
               <source
                 media='(min-width: 0px)'
                 srcSet={`${src}?nf_resize=fit&w=450`}

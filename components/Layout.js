@@ -25,6 +25,7 @@ export default ({ title, children }) => {
           href='https://fonts.googleapis.com/css?family=Hepta+Slab|Merriweather|Open+Sans&display=swap'
           rel='stylesheet'
         />
+        <script src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
       </Head>
       <Header className='header' />
       <main>
@@ -64,6 +65,11 @@ export default ({ title, children }) => {
         p,
         li {
           max-width: 50em;
+        }
+
+        img {
+          margin: 0;
+          padding: 0;
         }
       `}</style>
     </div>

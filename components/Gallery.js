@@ -25,6 +25,7 @@ export default ({ items }) => (
         flex-direction: column;
         justify-content: center;
         max-width: 600px;
+        min-height: 300px;
         margin: 0 auto;
       }
       small {
