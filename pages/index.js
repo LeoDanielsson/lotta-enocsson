@@ -18,7 +18,25 @@ export default () => {
       <div className='body'>
         <div className='gallery'>
           {images.map(src => (
-            <img key={src} src={src} />
+            <picture>
+              <source
+                media='(min-width: 0px)'
+                srcSet={`${src}?nf_resize=fit&w=450`}
+              />
+              <source
+                media='(min-width: 450px)'
+                srcSet={`${src}?nf_resize=fit&w=650`}
+              />
+              <source
+                media='(min-width: 650px)'
+                srcSet={`${src}?nf_resize=fit&w=900`}
+              />
+              <source
+                media='(min-width: 900px)'
+                srcSet={`${src}?nf_resize=fit&w=1280`}
+              />
+              <img key={src} src={src} />
+            </picture>
           ))}
         </div>
       </div>

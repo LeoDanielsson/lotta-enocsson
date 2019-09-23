@@ -42,6 +42,10 @@ export default ({ title, children }) => {
           color: ${red};
           margin: 48px 0;
         }
+
+        html {
+          background: #000;
+        }
         body {
           background-image: linear-gradient(
               rgba(0, 0, 0, 0) 0vh,

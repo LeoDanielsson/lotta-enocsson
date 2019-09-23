@@ -1,11 +1,12 @@
 import { grey } from '../colors';
+import Picture from './Picture';
 
 export default ({ items }) => (
   <div className='gallery'>
     {items.map(item => (
       <div key={item.name} className='item'>
         <a href={item.image} target='_blank'>
-          <img src={item.image} />
+          <Picture src={item.image} />
         </a>
         {item.description && <small>{item.description}</small>}
       </div>
