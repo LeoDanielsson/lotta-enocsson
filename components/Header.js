@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { red, grey, eggshell } from '../colors';
+import { red } from '../colors';
 
 const nav = [
   { text: 'Hem', href: '/' },

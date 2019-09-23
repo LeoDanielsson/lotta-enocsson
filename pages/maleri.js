@@ -1,5 +1,4 @@
 import Layout from '../components/Layout';
-import { grey } from '../colors';
 import content from '../content/pages/paintings.md';
 import Gallery from '../components/Gallery';
 

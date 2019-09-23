@@ -1,7 +1,6 @@
-import { useEffect } from 'react';
 import Head from 'next/head';
 import Header from './Header';
-import { eggshell, red, grey, lightRed } from '../colors';
+import { black, white, red } from '../colors';
 
 import Typography from 'typography';
 import Footer from './Footer';
@@ -44,18 +43,10 @@ export default ({ title, children }) => {
         }
 
         html {
-          background: #000;
+          background: ${black};
         }
         body {
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0) 0vh,
-              rgba(0, 0, 0, 1) 30vh
-            ),
-            url('/static/img/IMG_2096.jpg');
-          color: #fafafa;
-          background-position: top;
-          background-size: 100vw;
-          background-repeat: no-repeat;
+          color: ${white};
         }
         main {
           padding-top: 32px;
@@ -73,17 +64,6 @@ export default ({ title, children }) => {
         p,
         li {
           max-width: 50em;
-        }
-
-        @media (min-width: 900px) {
-          body {
-            background-image: linear-gradient(
-                rgba(0, 0, 0, 0) 0vh,
-                rgba(0, 0, 0, 0.9) 50vh,
-                rgba(0, 0, 0, 0.99) 100vh
-              ),
-              url('/static/img/IMG_2096.jpg');
-          }
         }
       `}</style>
     </div>

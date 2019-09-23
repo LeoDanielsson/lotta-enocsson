@@ -1,5 +1,4 @@
 import Layout from '../components/Layout';
-import { gold } from '../colors';
 import content from '../content/pages/startpage.md';
 
 export default () => {
@@ -44,12 +43,6 @@ export default () => {
       <style jsx>{`
         .teaser {
           font-size: 24px;
-          margin-bottom: 32px;
-        }
-
-        .article {
-          border-top: 1px solid ${gold};
-          padding-top: 24px;
           margin-bottom: 32px;
         }
 

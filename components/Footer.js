@@ -1,5 +1,3 @@
-import { grey } from '../colors';
-
 export default () => (
   <footer>
     <address>
