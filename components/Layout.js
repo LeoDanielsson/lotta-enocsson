@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Header from './Header';
 import { black, white, red } from '../colors';
 
@@ -14,18 +15,26 @@ const typography = new Typography({
   bodyFontFamily: ['Open Sans', 'sans-serif']
 });
 
-export default ({ title, children }) => {
-  useEffect(() => {
-    if (window) {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+const gaScript = `
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
 
-      gtag('config', 'UA-92249813-2');
+gtag('config', 'UA-92249813-2');
+`;
+
+export default ({ title, children }) => {
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    if (window && window.ga) {
+      window.ga('set', 'page', pathname);
+      window.ga('send', 'pageview');
     }
   }, []);
+
   return (
     <div>
       <Head>
@@ -43,7 +52,7 @@ export default ({ title, children }) => {
           async
           src='https://www.googletagmanager.com/gtag/js?id=UA-92249813-2'
         ></script>
-        <script></script>
+        <script dangerouslySetInnerHTML={{ __html: gaScript }} />
       </Head>
       <Header className='header' />
       <main>
