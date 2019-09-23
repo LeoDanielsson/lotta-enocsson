@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import Header from './Header';
 import { black, white, red } from '../colors';
@@ -14,6 +15,17 @@ const typography = new Typography({
 });
 
 export default ({ title, children }) => {
+  useEffect(() => {
+    if (window) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-92249813-2');
+    }
+  }, []);
   return (
     <div>
       <Head>
@@ -27,6 +39,11 @@ export default ({ title, children }) => {
           rel='stylesheet'
         />
         <script src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
+        <script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=UA-92249813-2'
+        ></script>
+        <script></script>
       </Head>
       <Header className='header' />
       <main>
