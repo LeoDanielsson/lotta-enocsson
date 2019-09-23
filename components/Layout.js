@@ -18,6 +18,7 @@ export default ({ title, children }) => {
     <div>
       <Head>
         <title>{`Lotta Enocsson - ${title}`}</title>
+        <meta name='Description' content='Målare och skulptör i Stockholm.' />
         <meta lang='sv' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta charSet='utf-8' />
