@@ -53,7 +53,12 @@ export default () => {
           margin-bottom: 32px;
         }
 
-        @media (min-width: 900px) {
+        .seeAll {
+          display: flex;
+          justify-content: center;
+        }
+
+        @media (min-width: 600px) {
           .presentation {
             display: flex;
             justify-content: space-between;
@@ -74,6 +79,10 @@ export default () => {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 32px;
+          }
+
+          .seeAll {
+            justify-content: flex-start;
           }
         }
       `}</style>
