@@ -35,7 +35,9 @@ export default ({ title, metaTitle, children }) => {
       <Footer />
       <style jsx global>{`
         ${typography.toString()}
-
+        * {
+          box-sizing: border-box;
+        }
         .hero {
           height: 400px;
         }

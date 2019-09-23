@@ -34,7 +34,8 @@ export default () => {
           list-style: none;
           display: flex;
           margin: 0;
-          justify-content: space-around;
+          justify-content: space-between;
+          padding: 0 8px;
         }
 
         ul::-webkit-scrollbar {
@@ -55,12 +56,17 @@ export default () => {
           border-bottom: 2px solid ${red};
         }
 
-        @media (min-width: 900px) {
-          ul {
-            justify-content: flex-start;
-            overflow: scroll;
+        @media (max-width: 450px) {
+          header {
+            overflow-x: scroll;
             -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
+          }
+        }
+
+        @media (min-width: 600px) {
+          ul {
+            justify-content: flex-start;
           }
           a {
             padding: 16px;
