@@ -11,7 +11,7 @@ paintings:
     image: /static/img/img_2002.jpg
     name: Bakom gardinen
   - description: 110 x 80 cm
-    image: /static/img/IMG_2096.jpg
+    image: /static/img/img_2096.jpg
     name: Vårvinter
   - description: 110 x 80 cm
     image: /static/img/IMG_2444.jpg
@@ -26,19 +26,19 @@ paintings:
     image: /static/img/IMG_2634.jpg
     name: Så minns jag det
   - description: 110 x 80 cm
-    image: /static/img/IMG_5878.jpg
+    image: /static/img/img_5878.jpg
     name: Så var det då
   - description: 30 x 50 cm
     image: /static/img/IMG_7207.jpg
     name: Vinterviken en afton
   - description: 25 x 25 cm
-    image: /static/img/IMG_7208.jpg
+    image: /static/img/img_7208.jpg
     name: Sagan
   - description: 60 x 60 cm
     image: /static/img/IMG_7213.jpg
-    name: Påden röda filten
+    name: På den röda filten
   - description: 60 x 60 cm
-    image: /static/img/IMG_7218.jpg
+    image: /static/img/img_7218.jpg
     name: Jag mindes det så
   - description: 110 x 90 cm
     image: /static/img/IMG_7220.jpg
