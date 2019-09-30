@@ -35,7 +35,7 @@ paintings:
     image: /static/img/img_7208.jpg
     name: Sagan
   - description: 60 x 60 cm
-    image: /static/img/IMG_7213.jpg
+    image: /static/img/img_7213-2.jpg
     name: På den röda filten
   - description: 60 x 60 cm
     image: /static/img/img_7218.jpg
@@ -55,5 +55,11 @@ paintings:
   - description: 110 x 80 cm
     image: /static/img/img_2636.jpg
     name: Under ytan
+  - description: 110 x 80 cm
+    image: /static/img/img_2092.png
+    name: Molnet
+  - description: 110 x 80 cm
+    image: /static/img/img_2090-2.jpg
+    name: Silver i Vinterviken
 ---
 
