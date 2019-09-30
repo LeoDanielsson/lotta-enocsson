@@ -41,7 +41,7 @@ paintings:
     image: /static/img/img_7218.jpg
     name: Jag mindes det så
   - description: 110 x 90 cm
-    image: /static/img/IMG_7220.jpg
+    image: /static/img/img_7220.jpg
     name: Det som är heligt
   - description: 110 x 80 cm
     image: /static/img/img_2094.jpg
