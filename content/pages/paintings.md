@@ -8,7 +8,7 @@ paintings:
     image: /static/img/IMG_0757.JPG
     name: Röd flod
   - description: 60 x60 cm
-    image: /static/img/IMG_2002.jpg
+    image: /static/img/img_2002.jpg
     name: Bakom gardinen
   - description: 110 x 80 cm
     image: /static/img/IMG_2096.jpg
