@@ -27,6 +27,7 @@ I Urval:
 * Konsthallen Södra Rådhuset, Södertälje KF-95
 * Kulturhuset Västervik -92,
 * Galleri Rocade, Stockholm, -90 
+* Galleri Rocade, Stockholm, -89
 
 
 
