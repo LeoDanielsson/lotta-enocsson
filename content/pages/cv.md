@@ -6,7 +6,7 @@ subtitle: 'Målare och skulptör f, 1958 Stockholm'
 
 Grundskolan för Konstnärlig Utbildning, Gerlesborgsskolan,-76 Idun Lovén 83-85. Vidareutbildning: Utbildn. i marmorbearbetning, Örebro 92, Skulptur, Konstfacksskolan, skulptur - 94.
 
-## Utställningar
+## Separatutställningar
 
 I Urval:
 
