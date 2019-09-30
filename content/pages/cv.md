@@ -29,8 +29,6 @@ I Urval:
 * Galleri Rocade, Stockholm, -90 
 * Galleri Rocade, Stockholm, -89
 
-
-
 ## Grupputställningar
 
 I Urval:
@@ -73,10 +71,10 @@ I Urval:
 ## Offentliga uppdrag
 
 * Socialförvaltningen, Stockholm 1976
-* Nya Malmparken, Sollentuna.-18
+* Kompassen,Nya Malmparken, Sollentuna Centrum.-18
 
-## Uppdrag
+## Styrelseuppdrag
 
-* Vice Ordförande i SKF, Konstnärshuset, Smålandsgatan 7 Stockholm
+* Styrelseledamot och Vice Ordförande i SKF, Konstnärshuset,2006-2015, Smålandsgatan 7 Stockholm
 * Ordförande i föreningen Renqvist Verkstad, Kummelnäs
-* Medlem i Skulptörförbundets styrelse.
+* Styrelseledamot i Skulptörförbundets styrelse. 2017- fortfarande
