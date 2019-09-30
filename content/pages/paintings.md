@@ -29,7 +29,7 @@ paintings:
     image: /static/img/img_5878.jpg
     name: Så var det då
   - description: 30 x 50 cm
-    image: /static/img/IMG_7207.jpg
+    image: /static/img/img_7207.jpg
     name: Vinterviken en afton
   - description: 25 x 25 cm
     image: /static/img/img_7208.jpg
