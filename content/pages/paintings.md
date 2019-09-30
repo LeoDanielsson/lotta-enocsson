@@ -56,7 +56,7 @@ paintings:
     image: /static/img/img_2636.jpg
     name: Under ytan
   - description: 110 x 80 cm
-    image: /static/img/img_2092.png
+    image: /static/img/img_2092.jpg
     name: Molnet
   - description: 110 x 80 cm
     image: /static/img/img_2090-2.jpg
