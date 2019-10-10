@@ -59,3 +59,16 @@ collections:
                   widget: string,
                   required: false,
                 }
+      - label: Kontakt
+        name: contact
+        file: content/pages/contact.md
+        fields:
+          - { label: Namn, name: name, widget: string }
+          - { label: Gatuadress, name: streetAddress, widget: string }
+          - { label: Postnummer, name: postalCode, widget: string }
+          - { label: Postort, name: city, widget: string }
+          - { label: Telefonnummer, name: phoneNumber, widget: string }
+          - { label: E-post, name: email, widget: string }
+          - label: Länkar
+            name: links
+            widget: list
