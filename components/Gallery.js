@@ -8,10 +8,13 @@ export default ({ items }) => (
         <a href={item.image} target='_blank' aria-label='Ladda ner bild'>
           <Picture
             src={item.image}
-            alt={`${item.name} - ${item.description}`}
+            alt={`${item.name} — ${item.description}`}
           />
         </a>
-        {item.description && <small>{item.description}</small>}
+        <small>
+          <strong>{item.name}</strong>
+          {item.description && ` - ${item.description}`}
+        </small>
       </div>
     ))}
     <style jsx>{`
