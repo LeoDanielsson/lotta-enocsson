@@ -6,5 +6,13 @@ city: Stockholm
 phoneNumber: 073-624 92 85
 email: 073-624 92 85
 links:
+  - text: Renqvists verkstad
+    url: 'https://renqvistsverkstad.se'
+  - text: Skulptörförbundet
+    url: 'http://www.skulptorforbundet.se'
+  - text: Lotta Enocsson på svenskakonstnarer.se
+    url: 'https://www.svenskakonstnarer.se/start/plus_artist.php?chr=5&aid=1089'
+  - text: Konstnärshuset
+    url: 'http://konstnarshuset.org'
 ---
 
