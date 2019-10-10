@@ -1,4 +1,15 @@
 import Layout from '../components/Layout';
+import content from '../content/pages/contact.md';
+
+const {
+  name,
+  streetAddress,
+  postalCode,
+  city,
+  phoneNumber,
+  email,
+  links
+} = content.attributes;
 
 export default () => (
   <Layout title='Kontakt'>
@@ -6,46 +17,33 @@ export default () => (
     <div className='grid'>
       <address>
         <div>
-          <div>Lotta Enocsson</div>
-          <div>Ateljé Vinterviken hus 36</div>
-          <div>117 65 Stockholm</div>
+          <div>{name}</div>
+          <div>{streetAddress}</div>
+          <div>
+            {postalCode} {city}
+          </div>
         </div>
         <p>
           <span>Telefon: </span>
-          <a href='tel:0736249285'>073-624 92 85</a>
+          <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
         </p>
         <p>
           <span>E-post: </span>
-          <a href='mailto:lottaenocsson@hotmail.com'>
-            lottaenocsson@hotmail.com
-          </a>
+          <a href={`mailto:${email}`}>{email}</a>
         </p>
         <h2>Länkar</h2>
-        <p>
-          <a href='https://renqvistsverkstad.se' target='_blank'>
-            Renqvists verkstad
-          </a>
-        </p>
-        <p>
-          <a href='http://www.skulptorforbundet.se/' target='_blank'>
-            Skulptörförbundet
-          </a>
-        </p>
-        <p>
-          <a
-            href='https://www.svenskakonstnarer.se/start/plus_artist.php?chr=5&aid=1089'
-            target='_blank'
-          >
-            Lotta Enocsson på svenskakonstnarer.se
-          </a>
-        </p>
-        <p>
-          <a href='http://konstnarshuset.org/' target='_blank'>
-            Konstnärshuset
-          </a>
-        </p>
+        <ul>
+          {links &&
+            links.map(link => (
+              <li key={link.url}>
+                <a href={link.url} target='_blank'>
+                  {link.text}
+                </a>
+              </li>
+            ))}
+        </ul>
       </address>
-      <img src='/static/kontakt.jpg' />
+      <img src='/static/kontakt.jpg' alt='' />
     </div>
     <style jsx>{`
       address {
