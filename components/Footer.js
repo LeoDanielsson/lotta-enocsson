@@ -1,18 +1,31 @@
 import { grey } from '../colors';
+import content from '../content/pages/contact.md';
+
+const {
+  name,
+  streetAddress,
+  postalCode,
+  city,
+  phoneNumber,
+  email,
+  links
+} = content.attributes;
 
 export default () => (
   <footer>
     <address>
-      <div>Lotta Enocsson</div>
-      <div>Ateljé Vinterviken hus 36</div>
-      <div>117 65 Stockholm</div>
+      <div>{name}</div>
+      <div>{streetAddress}</div>
+      <div>
+        {postalCode} {city}
+      </div>
       <div className='phone'>
         <span>Telefon: </span>
-        <a href='tel:0701234567'>073-624 92 85</a>
+        <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
       </div>
       <div>
         <span>E-post: </span>
-        <a href='mailto:lottaenocsson@hotmail.com'>lottaenocsson@hotmail.com</a>
+        <a href={`mailto:${email}`}>{email}</a>
       </div>
     </address>
     <style jsx>{`
