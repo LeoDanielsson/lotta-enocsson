@@ -8,7 +8,7 @@ export default () => (
       <div>117 65 Stockholm</div>
       <div className='phone'>
         <span>Telefon: </span>
-        <a href='tel:0701234567'>070-123 45 67</a>
+        <a href='tel:0701234567'>073-624 92 85</a>
       </div>
       <div>
         <span>E-post: </span>
