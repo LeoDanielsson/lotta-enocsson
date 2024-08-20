@@ -1,13 +1,13 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { red } from '../colors';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { red } from "../colors";
 
 const nav = [
-  { text: 'Hem', href: '/' },
-  { text: 'CV', href: '/cv' },
-  { text: 'Målningar', href: '/malningar' },
-  { text: 'Skulpturer', href: '/skulpturer' },
-  { text: 'Kontakt', href: '/kontakt' }
+  { text: "Hem", href: "/" },
+  { text: "CV", href: "/cv" },
+  { text: "Målningar", href: "/malningar" },
+  { text: "Skulpturer", href: "/skulpturer" },
+  { text: "Kontakt", href: "/kontakt" },
 ];
 
 export default () => {
@@ -16,10 +16,10 @@ export default () => {
     <header>
       <nav>
         <ul>
-          {nav.map(link => (
+          {nav.map((link) => (
             <li key={link.text}>
-              <Link href={link.href}>
-                <a className={pathname === link.href ? 'active' : ''}>
+              <Link href={link.href} passHref legacyBehavior>
+                <a className={pathname === link.href ? "active" : ""}>
                   {link.text}
                 </a>
               </Link>
@@ -28,8 +28,11 @@ export default () => {
         </ul>
       </nav>
       <style jsx>{`
-        max-width: 1200px;
-        margin: 0 auto;
+        header {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
         ul {
           list-style: none;
           display: flex;
