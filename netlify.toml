@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/admin"
-  to = "/static/admin/index.html"
-  status = 200
