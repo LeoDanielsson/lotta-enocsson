@@ -2,3 +2,9 @@
   from = "/admin"
   to = "/static/admin/index.html"
   status = 200
+
+[[redirects]]
+  from = "https://objective-leavitt-cbd3a0.netlify.com/*"
+  to = "https://www.lottaenocsson.se/:splat"
+  status = 301
+  force = true
