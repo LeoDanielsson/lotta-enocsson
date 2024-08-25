@@ -12,6 +12,6 @@ links:
     url: http://www.skulptorforbundet.se
   - text: Lotta Enocsson på svenskakonstnarer.se
     url: https://www.svenskakonstnarer.se/start/plus_artist.php?chr=5&aid=1089
-  - text: test Konstnärshuset
+  - text: Konstnärshuset
     url: http://konstnarshuset.org
 ---
